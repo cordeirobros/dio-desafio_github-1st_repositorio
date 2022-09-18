@@ -1,0 +1,52 @@
+Solução resolvivel tanto por uma pessoa quanto por um computador.
+Empirismo - Tentativa e erro.
+
+4 pilares PC > Decomposição (diminuir o grau de problemas) 
+             > Reconhecimento de padrões
+	     > Abstração
+	     > Design de Algoritimos
+
+Técnicas de Raciocinio Lógico {Indução = Empirismo. Tentativas, erros e acertos
+                              {Dedução = Leis e teorias
+                              {Abdução = Conclusão de algo pra ter uma premissa. Processos investigativos oiu diagnósticos
+
+Exemplo 1 de Decomposição: Criar um APP
+> Finalidade
+> Interface
+> Funcionalidades
+> Pré-requisitos
+
+Exemplo 2 de Decomposição: Artigo
+> O que será abordado?
+> Estrutura
+> Conteúdp de cada tópico
+> Textos de conexão
+
+Estrutura Condicional
+*Simples   > Condição - Operação
+*Composta  > Comdição/Exceção - Operação
+*Encadeada > Condição - Condição/Exceção
+             Operação       Operação
+
+Vetores são conjuntos de variáveis/informações agrupadas.
+Matrizez são coleções de vetores/variáveis.
+
+Funções são trechos do código com objetivo específico. 
+*Vem da ídeia de decomposição...
+- Definição
+- Nome
+- Invocação
+- Variável local
+
+Código Fonte {Interpretação > Programa fonte executado diretamente
+	     {Tradução (1) Geração do programa objeto (2) Execução do programa objeto
+
+Análise Léxica/Scanner = 1ª fase do processo de compilação
+*Análise Sintática
+*Análise Semântica
+
+Orientação à Objeto possui: °Atributos
+			    °Comportamento
+			    °Estados
+
+

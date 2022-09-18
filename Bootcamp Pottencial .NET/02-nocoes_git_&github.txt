@@ -1,0 +1,107 @@
+01 TERMINAL 
+
+Grafic User Interface (GUI) X Command Line Interface (CLI)
+
+>O terminal do Windows é derivado do shel;
+>E o terminal do Linux é derivado do best.
+
+Comando básicos:
+- dir *no windows/ ls *no linux)
+- cd   = change direct 
+- cd..  = retroceder 1 nível de navegação
+- cls *no windows/ CLEAR *no linux) = Clean Screen 
+- mkdir = make direct
+- rmdir *no windows = remove directory ou seja o repositório/pasta por completo
+- rm -rf *no linux  = remove recursive force ou seja remover completamente todas 
+  as pastas encadeadas e forçar todas as permissões
+- echo  = simplesmente printa informações
+-  >    = redirecionador de fluxo
+
+Atalhos úteis:
+- Tecla 'TAB  = Auto completar
+- Control + L *apenas no linxux = Clean Screen
+
+
+############################################################################################
+
+02 FUNCIONAMENTO PRIMORDIAL
+
+SHA (Secure Hash Algorithm) - Algoritimo de encripitação; 
+foi desenvolvido pela NSA (Agência Nacional de Segurança dos EUA).
+*É uma forma curta de representar um arquivo...
+
+Objetos Interno do GIT
+- Blobs (Bolhas fundamentais que armazenam/contém meta dados)
+- Trees (Árvores que armazenam/apontam Blobs e arquivos)
+- Commits (apontam para uma árvore, aponta para um parente - antigo ommit, apontam autor...)
+
+Qualquer alteração no arquivo irá refletir diretamente nele, ou seja na bolha fundamental
+que por sua vez irá repercutir alterações de SHA tanto nas árvores, como nos commits.
+
+Comandos para criação de chave/keygen SSH para o GitHub:
+
+Passo 01 - Abrir o Git Bash e digitar:
+ssh-keygen -t ed25519 -C "hjcordeiro7@hotmail.com" (e-mail correspondente)
+
+Passo 02 - Após criação da chave com senha, entrar no diretorio especificado:
+cd /c/user/'usuario correspondente'/.ssh/
+
+Passo 03 - Abrir o arquivo pré-configurado/encripitado:
+cat id_ed25519e.pub
+
+Passo 04 - Copiar a chave pública e colar no GitHub:
+dá um título da máquina usada (apelido)
+
+Passo 05 - Voltar no cli, no diretorio e digitar:
+eval $(ssh-agent -s)
+
+Passo 06 - Adicionar/digitar:
+ssh-add id_ed25519
+*criou a chave privada
+
+[Extra] Modo executável e comandos para clone de repositório privado: 
+
+Passo 01 - Para clonar um repositorio do github através do git:
+*retornar na página/https do github em seguida clicar em CODE e esolher a opção referente ao SSH
+
+Passo 02 - Com essa copia/transferencia, retornar ao terminal e digitar:
+git clone "e colar o caminho ssh proveniente do github"
+*normalmente a primeira vez dará um flag/mensagem, prosseguir com YES 
+*ficará pronto o clone do ssh com repositorio privado 
+
+
+############################################################################################
+
+PRIMEIROS COMANDOS GIT
+
+git init      =  Iniciar um repositorio git (oculta - gerencional)
+dir -a        =  Listar/mostrar arquivos ocultos 
+git add *     =  Adicionar todos os arquivos da pasta repositório
+git commit -m = 
+
+*git config --global user.email "hjcordeiro7@hotmail.com"
+*git config --global user.name cordeirobros
+
+
+############################################################################################
+
+LINKANDO GIT AO GITHUB
+
+git config --list = verificação das configurações/predefinições
+
+1º Criamos um repositorio no gitHub, podendo escolher entre público ou privado
+
+/*(Se houver algum arquivo markdown e setarmos confirmando o readme na criação 
+de repositorioautomaticamente será definido como primeiro arquivo de leitura...)*/
+
+2º Após criação do repositorio, copiamos o https gerado e retornamos ao git bash 
+mais exatamente na pasta ao qual estamos trabalhando:
+
+- git remote add origin + link https copiado (comando para adicionar remotamente)
+- git remote -v (lista as listas de repositorio que foram cadastrados até esse etapa)
+- git push origin master (empurrar da origem já definida e o master é a brench principal)
+
+3º Irá necessitar confirmação/autenticação entre o git e o gitHub.
+
+
+ 
